@@ -1,7 +1,7 @@
 #include <iostream>
 #include "shared_ptr.h"
 
-void main() {
+int main(void) {
 
 	int* p = new int(1);
 	shared_ptr<int> sp(p);
@@ -23,5 +23,5 @@ void main() {
 	// sp2,sp3,sp4离开作用域后，会使得共享的会调用--_count三次，所以是4-3
 	std::cout << sp.getRef() << std::endl;   // 1
 
-	std::cin.get();
+	return 0;
 }
