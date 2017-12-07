@@ -3,12 +3,12 @@
 
 class String {
 public:
-	String(const char* str = NULL);					// 普通构造函数    
-	String(const String& other);					// 拷贝构造函数
-	~String();								        // 析构函数    
+	String(const char* str = NULL);			// 普通构造函数    
+	String(const String& other);			// 拷贝构造函数
+	~String();				        // 析构函数    
 	String& operator=(const String& other);         // 赋值函数
 private:
-	char* m_data;									// 用于保存字符串
+	char* m_data;		 			// 用于保存字符串
 };
 
 String::String(const char* str) {
